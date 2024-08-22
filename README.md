@@ -59,9 +59,14 @@ Finally, I plotted the 20% most expensive properties colored by property type an
 ### Multiple regression to determine most important numerical features for price
 
 I selected all the numeric data from the sets and created a baseline linear model to predict price. The initial goodness-of-fit was not great, so I looked at methods to select the most important features. I noticed that there was potential multicollinearity with my predictor variables. To deal with multicollinearity, I used the Variance Inflation Factor (VIF) which can be calculated as:
-[!vif](\Images\vif.png)
+![vif](/Images/vif.png)
+
 From Investopedia:
 >Variance inflation factors allow a quick measure of how much a variable is contributing to the standard error in the regression. When significant multicollinearity issues exist, the variance inflation factor will be very large for the variables involved. After these variables are identified, several approaches can be used to eliminate or combine collinear variables, resolving the multicollinearity issue.
+
+Taking the VIF of all the predictors and eliminating those that were over 10, I was able to increase the adjusted R-squared value of the model from 0.460 to 0.822; however, the mean absolute error increased slightly. I next decided to utilize an algorithmic approach to feature selection, and after research, I landed on Recursive Feature Elimination with Cross-Validation from SciKit-Learn (RFECV). This package ran the regression over five different train-test splits while eliminating features that were not significant predictors. This truncated the feature list from 27 to 12 degrees of freedom and both increased the adjusted R-squared value and decreased the mean absolute error from the baseline.
+
+There are many more methods to refine feature selection in multiple regression, and in a future effort, I could encode categorical data into a pricing model.
 
 ## Interactive Usage
 
@@ -84,13 +89,6 @@ fig.show()
 ![map image](/Images/Interactive_map.png)
 
 These maps are rich in data and can be zoomed/panned so I encourage you to play around with them!
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 
