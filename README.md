@@ -1,5 +1,7 @@
 # Project 1: Boston and Seattle Airbnb market analysis
 
+Check out the [blog post!](https://medium.com/@keegankarbach_3270/growing-money-in-the-airbnb-market-01635cfbfb07)
+
 This project looks at Airbnb data sets from the Boston and Seattle markets to answer
  - What is the distribution of property and room types in each market and how do they compare?
  - How does property or room type affect rental price? Do both markets have similar patterns?
