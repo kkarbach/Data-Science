@@ -4,9 +4,8 @@
  * [Instructions on how to interact with the project](#instructions-on-how-to-interact-with-the-project)
  * [Software & Libraries](#software-and-libraries-used)
  * [Project Motivation](#project-motivation)
- * [File Descriptions](#file-descriptions)
- * [Components](#components)
- * [Licensing, Authors, Acknowledgements, etc.](#licensing-authors-acknowledgements-etc)
+ * [File Structure and Descriptions](#file-structure-and-descriptions)
+ * [Python files](#python-files)
  
 ### Instructions on how to interact with the project:
 1. Run the following commands in the project's root directory to set up your database and model.
@@ -87,13 +86,10 @@ A Python script which loads a database and generates a parallel-serial, cross-va
  - Exports the final model to a pickle file
  
 #### 3. Flask Web App
-The project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. The outputs are shown below:
+The project includes a web app where categorical trends are displayed and an end user can input and categorize a message in real-time using the embedded ML model. 
+Representative screenshots of the two pages:
 
-![app3](https://user-images.githubusercontent.com/54407746/98725077-9826b800-238c-11eb-828f-864dce8cbd9b.JPG)
-
-
-![app1](https://user-images.githubusercontent.com/54407746/98724735-159df880-238c-11eb-8338-bc4b4e0b1c39.JPG)
+![Page1](/Project-2/images/Page_1.png)
 
 
-![app2](https://user-images.githubusercontent.com/54407746/98724932-5bf35780-238c-11eb-8a93-ebb09ab2d510.JPG)
-
+![Page2](/Project-2/images/Page_2.png)
