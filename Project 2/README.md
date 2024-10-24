@@ -89,7 +89,7 @@ A Python script which loads a database and generates a parallel-serial, cross-va
 The project includes a web app where categorical trends are displayed and an end user can input and categorize a message in real-time using the embedded ML model. 
 Representative screenshots of the two pages:
 
-![Page1](/images/Page_1.png)
+![Page1](/Project 2/images/Page_1.png)
 
 
-![Page2](/images/Page_2.png)
+![Page2](/Project 2/images/Page_2.png)
