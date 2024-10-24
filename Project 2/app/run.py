@@ -5,6 +5,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
+nltk.download(['punkt', 'wordnet','averaged_perceptron_tagger'])
 
 from flask import Flask
 from flask import render_template, request, jsonify
