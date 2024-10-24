@@ -86,13 +86,10 @@ A Python script which loads a database and generates a parallel-serial, cross-va
  - Exports the final model to a pickle file
  
 #### 3. Flask Web App
-The project includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app will also display visualizations of the data. The outputs are shown below:
+The project includes a web app where categorical trends are displayed and an end user can input and categorize a message in real-time using the embedded ML model. 
+Representative screenshots of the two pages:
 
-![page1](https://user-images.githubusercontent.com/54407746/98725077-9826b800-238c-11eb-828f-864dce8cbd9b.JPG)
-
-
-![app1](https://user-images.githubusercontent.com/54407746/98724735-159df880-238c-11eb-8338-bc4b4e0b1c39.JPG)
+![Page1](/images/Page1.jpg)
 
 
-![app2](https://user-images.githubusercontent.com/54407746/98724932-5bf35780-238c-11eb-8a93-ebb09ab2d510.JPG)
-
+![Page2](/images/Page2.jpg)
