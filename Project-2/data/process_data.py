@@ -37,9 +37,9 @@ def clean_data(df):
     for column in categories:
         categories[column] = categories[column].str.slice(-1,)
         categories[column] = categories[column].astype(int)
-    categories.drop(categories[categories.related > 1]].index, inplace=True)
     df.drop('categories',axis=1,inplace=True)
     df = pd.concat([df,categories],axis=1)
+    df.drop(df[df.related > 1].index, inplace=True) #https://stackoverflow.com/questions/13851535/how-to-delete-rows-from-a-pandas-dataframe-based-on-a-conditional-expression
     df.drop_duplicates(inplace=True)
     return df
 
