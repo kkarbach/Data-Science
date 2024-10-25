@@ -6,7 +6,7 @@
  * [Files & Datasets](#files-and-datasets)
  * [Findings](#summary-of-findings)
 
-Check out the blog post!
+Check out the [blog post!](https://medium.com/@keegankarbach_3270/an-ml-model-approach-to-optimize-starbucks-promotional-offers-427ddc91ab3a)
 
 ### Project Motivation
 
