@@ -4,7 +4,7 @@
  * [Project Motivation](#project-motivation)
  * [Software & Libraries](#software-and-libraries)
  * [Files & Datasets](#files-and-datasets)
- * [Python files](#python-files)
+ * [Findings](#summary-of-findings)
 
 Check out the blog post!
 
@@ -75,7 +75,5 @@ Event log (306648 events x 4 fields)
  - reward: (numeric) money gained from "offer completed"
  - time: (numeric) hours after start of test
 
-![Page1](/Project-2/images/Page_1.png)
-
-
-![Page2](/Project-2/images/Page_2.png)
+### Summary of Findings
+Three models were compared: Stochastic Gradient Descent (SGD), Multiple Logistic Regression (MLR), and Random Forest. After comparison, MLR appeared to outperform the other models, with an accuracy just shy of .80. However, it was very poor at predicting positive cases (zero recall), so the accuracy metric was misleading. The best precision and recall for both positive and negative results was also the model with the lowest accuracy -- the SGD model. This, incidentally, was also the model suggested by scikit-learn for the type of data I had. I will explore potential ways to improve the performance of the model further in the writeup linked at the top of this readme.
