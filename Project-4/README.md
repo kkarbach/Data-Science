@@ -44,28 +44,36 @@ Data were provided from Starbucks through the Udacity platform as three JSON fil
     * Records of transactions and customer interactions with offers
 
 The schema of the data files were provided by Udacity:
-**portfolio.json**
--   id (string) - offer id
--   offer_type (string) - type of offer ie BOGO, discount, informational
--   difficulty (int) - minimum required spend to complete an offer
--   reward (int) - reward given for completing an offer
--   duration (int) - time for offer to be open, in days
--   channels (list of strings)
 
-**profile.json**
+#### profile.json
+Rewards program users (17000 users x 5 fields)
 
--   age (int) - age of the customer
--   became_member_on (int) - date when customer created an app account
--   gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
--   id (str) - customer id
--   income (float) - customer's income
+ - gender: (categorical) M, F, O, or null
+ - age: (numeric) missing value encoded as 118
+ - id: (string/hash)
+ - became_member_on: (date) format YYYYMMDD
+ - income: (numeric)
 
-**transcript.json**
+#### portfolio.json
+Offers sent during 30-day test period (10 offers x 6 fields)
 
--   event (str) - record description (ie transaction, offer received, offer viewed, etc.)
--   person (str) - customer id
--   time (int) - time in hours since start of test. The data begins at time t=0
--   value - (dict of strings) - either an offer id or transaction amount depending on the record
+ - reward: (numeric) money awarded for the amount spent
+ - channels: (list) web, email, mobile, social
+ - difficulty: (numeric) money required to be spent to receive reward
+ - duration: (numeric) time for offer to be open, in days
+ - offer_type: (string) bogo, discount, informational
+ - id: (string/hash)
+
+#### transcript.json
+Event log (306648 events x 4 fields)
+
+ - person: (string/hash)
+ - event: (string) offer received, offer viewed, transaction, offer completed
+ - value: (dictionary) different values depending on event type
+ - offer id: (string/hash) not associated with any "transaction"
+ - amount: (numeric) money spent in "transaction"
+ - reward: (numeric) money gained from "offer completed"
+ - time: (numeric) hours after start of test
 
 ![Page1](/Project-2/images/Page_1.png)
 
