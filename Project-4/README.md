@@ -29,6 +29,43 @@ This project was completed using Jupyter Lab v3.5.3 running Python v3.11.9 and t
 
 
 ### Files and Datasets
+Starbucks.ipynb
+  * The jupyter notebook contining the development and analysis
+README.md
+  * This file
+
+Datasets
+Data were provided from Starbucks through the Udacity platform as three JSON files. These files contain simulated data from the Starbucks Rewards mobile app.
+  * portfolio.json
+    * Offer IDs and metadata on each offer (i.e. duration, barrier-of-entry, etc.)
+  * profile.json
+    * Demographic data for each user having made transactions in this series of datasets
+  * transcript.json
+    * Records of transactions and customer interactions with offers
+
+The schema of the data files were provided by Udacity:
+**portfolio.json**
+-   id (string) - offer id
+-   offer_type (string) - type of offer ie BOGO, discount, informational
+-   difficulty (int) - minimum required spend to complete an offer
+-   reward (int) - reward given for completing an offer
+-   duration (int) - time for offer to be open, in days
+-   channels (list of strings)
+
+**profile.json**
+
+-   age (int) - age of the customer
+-   became_member_on (int) - date when customer created an app account
+-   gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F)
+-   id (str) - customer id
+-   income (float) - customer's income
+
+**transcript.json**
+
+-   event (str) - record description (ie transaction, offer received, offer viewed, etc.)
+-   person (str) - customer id
+-   time (int) - time in hours since start of test. The data begins at time t=0
+-   value - (dict of strings) - either an offer id or transaction amount depending on the record
 
 ![Page1](/Project-2/images/Page_1.png)
 
